@@ -1,0 +1,930 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Tourney:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gaegu&family=La+Belle+Aurore&family=Stylish&family=Vibur&display=swap');
+
+html {
+    scroll-behavior: smooth !important;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    text-transform: capitalize !important;
+    font-family: 'Alata', sans-serif;
+}
+
+/* 
+body{ 
+    background-color: #E3E7F3!important;
+    background: url(../images/download\ \(1\).png) no-repeat fixed;
+ } */
+
+body::-webkit-scrollbar {
+    width: 8px;
+    background-color: rgba(255, 255, 255, 0.897);
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #97b1e7 !important;
+    outline: 1px solid slategrey;
+}
+
+.typed-cursor {
+    display: none !important;
+}
+
+.big {
+    position: relative;
+    top: 20px;
+    text-transform: uppercase !important;
+    font-size: 60px;
+    z-index: 1 !important;
+    opacity: 0.2 !important;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+.neon {
+    letter-spacing: 4px;
+    display: inline-block;
+    position: relative;
+    filter: brightness(500%);
+
+
+}
+
+.neon::before {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    right: 0;
+    mix-blend-mode: difference !important;
+    filter: blur(2.5px);
+
+}
+
+/* .neon::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #EE6A80, #9D5C6C, #758CB0, #2FAEE2);
+    mix-blend-mode: multiply!important;
+    animation-name:move;
+    animation-duration: 2s;
+    animation-timing-function:linear;
+    animation-fill-mode: both!important;
+    animation-iteration-count: infinite;
+} */
+
+
+
+
+
+/* .coloree{
+    background: linear-gradient(45deg, #f595a0 0%, #31B9E0 100%);
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-align: justify;
+} */
+/* ///////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////// */
+.header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+.navbar {
+    background-color: transparent;
+    padding: 20px 5px;
+    z-index: 11;
+    position: relative;
+
+
+}
+
+.navbar-brand {
+    font-size: 35px;
+    font-family: 'Tourney', cursive;
+    font-weight: 500;
+    color: #fff !important;
+}
+
+.navbar-brand span {
+    color: #F8D8DC;
+}
+
+.nav-link {
+    text-transform: uppercase !important;
+    font-size: 18px;
+    margin: 5px;
+    color: #F8D8DC !important;
+    font-weight: 500;
+    transition: all 0.1s ease;
+    box-sizing: border-box;
+}
+
+.fa-paint-brush,
+.fa-address-book {
+    font-size: 22px !important;
+
+}
+
+.nav-link:hover {
+    color: #EFAEB6 !important;
+    transition: 0.5s;
+}
+
+/* ////////////////////// */
+nav.sticky {
+    background-color: #000 !important;
+    color: white !important;
+    transition: 0.5s !important;
+    z-index: 1111;
+    opacity: 1 !important;
+    padding: 0px 15px !important;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transition: all 0.5 ease-in-out;
+}
+
+/* nav.sticky .navbar-brand,
+nav.sticky .navbar-brand span{
+    font-size: 30px!important;
+    color: #EFAEB6!important;
+
+} */
+nav.sticky .navbar-brand img {
+    width: 150px;
+    height: 50px;
+    transition: all 0.5 ease-in-out;
+}
+
+nav.sticky .nav-link.active {
+    color: #EFAEB6 !important;
+}
+
+nav.sticky .nav-link {
+    color: #EFAEB6 !important;
+    font-size: 15px !important;
+}
+
+nav.sticky .butn1 {
+    background-color: #EFAEB6;
+    border: 1px solid #EFAEB6;
+}
+
+nav.sticky .butn1:hover {
+    background-color: transparent;
+    border: 1px solid #EFAEB6;
+    color: #fff;
+
+}
+
+/* //////////////////////*/
+.welcomediv {
+    color: white;
+    margin-top: 280px;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)) !important; */
+
+}
+
+.welcomediv h1 {
+    /* font-size: 50px; */
+
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: 2px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.welcomediv h3 {
+    letter-spacing: 5px;
+    color: #fff;
+    background-color: #8f666b;
+    display: inline;
+    font-weight: 400;
+    font-family: 'Tourney', cursive;
+
+}
+
+.welcomediv p {
+    letter-spacing: 2.5px;
+    color: #F8D8DC;
+
+
+}
+
+.butn1 {
+    background-color: transparent;
+    border: 1px solid #EFAEB6;
+    border-radius: 50px !important;
+    border-radius: 0px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 15px 30px !important;
+    transition: all 0.6s ease !important;
+    letter-spacing: 2px;
+
+}
+
+.butn1:hover {
+    background-color: #EFAEB6;
+    border: 1px solid #EFAEB6;
+    color: #000;
+}
+
+/* /////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////// */
+
+.About {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.above-img {
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    left: 10px;
+    z-index: -1;
+}
+
+.above-inner h2 {
+    font-family: 'Vibur', cursive;
+    font-weight: 900;
+    color: #F49EB7;
+    background: url("../images/download\ \(5\).webp") no-repeat center;
+    background-size: contain;
+}
+
+.above-inner p {
+    font-family: 'Gaegu', cursive;
+    color: #888888;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.above-inner h5 {
+    color: #F49EB7;
+    font-family: 'Gaegu', cursive;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.about-inner {
+    width: 100%;
+    margin-top: 80px;
+
+}
+
+.text {
+    background: url(../images/banners/about.webp) no-repeat center center;
+    background-size: cover
+}
+
+.text h2 {
+    font-size: 50px;
+    color: #8f666b;
+    font-family: 'Vibur', cursive;
+}
+
+.text p {
+    margin-top: 50px;
+    letter-spacing: 1px;
+    color: #888888;
+
+}
+
+
+.butn2 {
+    background-color: transparent;
+    border: 1.2px solid #EFAEB6;
+    border-radius: 50px;
+    background-color: #F49EB7;
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 15px 30px !important;
+    transition: all 0.6s ease;
+    margin-left: 15px;
+    letter-spacing: 2px;
+
+}
+
+.butn2:hover {
+    background-color: transparent;
+    border: 1.2px solid #EFAEB6;
+    color: #F49EB7;
+    transition: all 0.6s ease;
+}
+
+
+/* /////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////// */
+.why {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-color: transparent;
+    background: url(../images/4.webp) no-repeat center;
+    background-size: cover;
+}
+
+.choose-inner {
+    margin-top: 80px;
+}
+
+.choose-inner h1 {
+    color: #f595a0;
+    font-family: 'Gaegu', cursive;
+    background: url("../images/download\ \(5\).webp") no-repeat left center;
+    background-size: contain;
+}
+
+.choose-inner p {
+    margin-top: 20px;
+    line-height: 44px;
+    font-family: 'Gaegu', cursive;
+    font-size: 19px;
+}
+
+.count-data {
+    margin-top: 80px;
+}
+
+.count-data h3 {
+    font-size: 44px;
+    font-weight: 900;
+    color: #F49EB7;
+}
+
+.count-data p {
+    font-size: 14px;
+    color: #888888;
+}
+
+
+
+
+/* /////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////// */
+
+.artist {
+    width: 100%;
+    height: auto;
+    margin-top: 80px !important;
+    background: url("../images/download\ \(1\).png") no-repeat center;
+    background-size: cover;
+}
+
+.above-artist h2 {
+    color: #f595a0;
+    font-family: 'Gaegu', cursive;
+    background: url("../images/download\ \(5\).webp") no-repeat center;
+    background-size: contain;
+
+}
+
+.above-artist p {
+    color: #888888;
+    font-family: 'Gaegu', cursive;
+}
+
+.artisit-person {
+    width: 100%;
+    height: 600px;
+    background: url("../images/gallary/artist\ \(1\).jpg") no-repeat center center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.artisit-person .data {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+
+}
+
+.artisit-person:hover .data {
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease-in-out;
+}
+
+.artisit-person .data .rotate-logo {
+    animation: rotation 12s infinite linear;
+}
+
+.butn3 {
+    background-color: #EFAEB6;
+    border: 1px solid #EFAEB6;
+    border-radius: 50px !important;
+    border-radius: 0px;
+    color: #000;
+    font-weight: 400;
+    font-size: 14px;
+    width: 100%;
+    padding: 15px 30px !important;
+    transition: all 0.6s ease !important;
+    letter-spacing: 2px;
+    text-align: center;
+
+}
+
+.artisit-person .data .butn3 {
+    position: absolute;
+    width: 80%;
+    top: 100%;
+    left: 10%;
+
+}
+
+.artisit-person .data .icons {
+    position: absolute;
+    width: 100%;
+    top: 10%;
+    left: 100%;
+    transition: all 0.5s ease-in-out;
+
+
+
+}
+
+.icon {
+    font-size: 30px;
+}
+
+.artisit-person:hover .data .butn3 {
+    transition: all 0.8s ease-in-out;
+    top: 90%;
+}
+
+.artisit-person:hover .data .icons {
+    transition: all 0.8s ease-in-out;
+    left: 90%;
+}
+
+
+
+
+
+.butn4 {
+    background-color: transparent;
+    border: 1.2px solid #EFAEB6;
+    border-radius: 50px;
+    background-color: #F49EB7;
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 15px 30px !important;
+    transition: all 0.6s ease;
+    margin-left: 15px;
+    letter-spacing: 2px;
+
+}
+
+.butn4:hover {
+    background-color: transparent;
+    border: 1.2px solid #EFAEB6;
+    color: #F49EB7;
+    transition: all 0.6s ease;
+}
+
+/* /////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////// */
+.gallary {
+    width: 100%;
+    height: auto;
+    margin-top: 80px !important;
+    position: relative;
+}
+
+.above-gallary h2 {
+    color: #f595a0;
+    font-family: 'Vibur', cursive;
+    background: url("../images/download\ \(5\).webp") no-repeat center;
+    background-size: contain;
+}
+
+.above-gallary p {
+    color: #888888;
+    font-family: 'Gaegu', cursive;
+}
+
+.gallaryCarry {
+    overflow: hidden;
+}
+
+.gallaryCarry img {
+    overflow: hidden;
+    z-index: -1;
+}
+
+.gallaryCarry .overlay {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.384);
+    z-index: 1;
+    top: 0%;
+}
+
+.gallaryCarry .overlay h5 {
+    width: 100%;
+    height: 35%;
+    background-color: #fff;
+    color: #f595a0;
+    margin: 0 auto !important;
+    top: 102% !important;
+    z-index: 1;
+    transition: all 0.4s ease-in-out;
+
+}
+
+.gallaryCarry:hover .overlay h5 {
+    top: 80% !important;
+    transition: all 0.4s ease-in-out;
+}
+
+/* /////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////// */
+.testemonials {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background: linear-gradient(rgba(255, 210, 219, 0.7), rgba(255, 210, 219, 0.7));
+}
+
+.teste-main {
+    margin-top: 80px !important;
+    position: relative;
+}
+
+.teste-data img {
+    border-radius: 50%;
+}
+
+.teste-data p {
+    font-size: 20px;
+    font-family: 'Gaegu', cursive;
+    color: #000;
+}
+
+.teste-data p.span {
+    font-size: 25px;
+}
+
+.Teste-img {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50px;
+    top: -50px;
+    z-index: -1;
+}
+
+/* /////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////// */
+
+.FAQS {
+    width: 100%;
+    height: auto;
+    position: relative;
+    /* margin-top: 80px !important; */
+    background-color: transparent;
+    background: url("../images/6.webp") no-repeat center;
+    background-size: cover;
+}
+
+.FAQS .card {
+    background-color: transparent;
+    border-radius: 0px;
+    border-left: 5px solid #f15063 !important;
+}
+
+.faqs-span {
+    font-family: 'Stylish', sans-serif;
+    font-size: 22px;
+    color: #f15063;
+}
+
+.rotate-icon {
+    font-size: 22px;
+    color: #f15063;
+}
+
+.faqs-p {
+    font-family: 'Gaegu', cursive;
+    font-size: 19px;
+    color: #888
+}
+
+/* /////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////// */
+
+footer {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+.footer-brand {
+    font-family: 'Graduate', cursive !important;
+}
+
+footer h2 {
+    text-align: left;
+    text-decoration-line: none;
+}
+
+footer h5 {
+    color: #fff !important;
+    font-size: 25px;
+}
+
+footer p {
+    color: #f0d9dc !important;
+}
+
+.context-dark,
+.bg-gray-dark,
+.bg-primary {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-classic a,
+.footer-classic a:focus,
+.footer-classic a:active {
+    color: #f0d9dc !important;
+}
+
+.nav-list li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.nav-list li a:hover:before {
+    margin-left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.contact_data dt,
+.contact_data dd {
+    color: #f0d9dc !important;
+
+}
+
+
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.social {
+    font-size: 25px;
+
+}
+
+.footerinput {
+    width: 75%;
+    height: 50px;
+    background-color: transparent;
+    padding: 15px;
+    outline: none;
+    border: 1px solid #EFAEB6;
+
+}
+
+.footerinput::placeholder {
+    font-size: 13px;
+    color: #f0d9dc;
+}
+
+.butn5 {
+    width: 60px;
+    height: 50px;
+    background-color: transparent;
+    margin-left: -5px;
+    border-radius: 2px;
+    border: 1px solid #EFAEB6;
+}
+
+/* todo  /////////////////////////////////////////////////////////  other pages  /////////////////////////////////////////////////////////////////////////// */
+/* todo  /////////////////////////////////////////////////////////  other pages  /////////////////////////////////////////////////////////////////////////// */
+/* todo  /////////////////////////////////////////////////////////  other pages  /////////////////////////////////////////////////////////////////////////// */
+/* todo  /////////////////////////////////////////////////////////  other pages  /////////////////////////////////////////////////////////////////////////// */
+/* todo  /////////////////////////////////////////////////////////  other pages  /////////////////////////////////////////////////////////////////////////// */
+/* todo  /////////////////////////////////////////////////////////  other pages  /////////////////////////////////////////////////////////////////////////// */
+/* todo  /////////////////////////////////////////////////////////  other pages  /////////////////////////////////////////////////////////////////////////// */
+/* todo  /////////////////////////////////////////////////////////  other pages  /////////////////////////////////////////////////////////////////////////// */
+/* todo  /////////////////////////////////////////////////////////  other pages  /////////////////////////////////////////////////////////////////////////// */
+
+.loginSection {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+.signupSection {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+.MainLogin {
+    height: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+
+}
+
+.MainLogin h3 {
+    color: #EFAEB6 !important;
+    font-family: 'Gaegu', cursive;
+}
+
+.MainLogin p {
+    color: #EFAEB6;
+    font-family: 'Gaegu', cursive;
+}
+
+.MainLogin form input {
+    background-color: transparent !important;
+    color: #fff;
+    border: 1.7px solid #EFAEB6 !important;
+}
+
+.MainLogin form input:focus {
+    color: #fff;
+}
+
+.MainLogin form input::placeholder {
+    color: #EFAEB6;
+}
+
+.targetLink {
+    font-family: 'Stylish', sans-serif;
+    color: #f15063;
+    font-size: 19px;
+}
+
+
+
+
+.Profile-header .welcomediv {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/banners/profile.jpg") no-repeat center fixed;
+    background-size: cover;
+
+}
+
+/* .Profile-header .welcomediv {
+    margin-top: 100px;
+
+} */
+
+
+.welcomediv .profile-img {
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    border: 10px solid #F49EB7;
+    transition: 0.5s;
+    transform: scale(1);
+ 
+
+}
+
+
+
+.welcomediv .profile-img:hover {
+    transition: 0.5s;
+    transform: scale(1.0800);
+}
+
+
+
+
+
+/* //////////////////////   responsive   //////////////////// */
+/* //////////////////////   responsive   //////////////////// */
+/* //////////////////////   responsive   //////////////////// */
+/* //////////////////////   responsive   //////////////////// */
+
+@media screen and (max-width: 1199px) {
+
+    .nav-link {
+        font-size: 17px !important;
+        font-weight: 400 !important;
+    }
+
+    .welcomediv .personal-photo img {
+        width: 250px;
+        height: 250px;
+    }
+
+
+    .about-data {
+        display: block !important;
+        margin: 0px;
+    }
+
+}
+
+
+@media screen and (max-width: 991px) {
+    .navbar {
+        background-color: black;
+        padding: 20px 20px;
+        background-color: black;
+        padding: 0px 5px !important;
+    }
+
+    .navbar .nav-link {
+        padding: none !important;
+    }
+
+    .welcomediv {
+        text-align: center;
+    }
+
+    .welcomediv .personal-photo img {
+        width: 180px;
+        height: 180px;
+
+    }
+
+    .welcomediv h1 {
+        font-size: 30px;
+    }
+
+    .welcomediv h3 {
+        font-size: 25px;
+    }
+
+    .welcomediv p {
+        width: 100% !important;
+    }
+
+    /* ? ///////////////////////////////////// */
+    .signupSection {
+        height: 100% !important;
+    }
+
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .title-text::after {
+        top: 120px;
+    }
+
+}
+
+
+@media screen and (max-width: 575px) {}
+
+@media screen and (max-width: 362px) {}

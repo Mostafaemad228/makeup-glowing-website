@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="70x70" href="images/favicon-70x70.png">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="css/fontawsome/fontawesome.min.css">
+    <link rel="stylesheet" href="css/fontawsome/solid.min.css">
+    <link rel="stylesheet" href="css/fontawsome/brands.min.css">
+    <!-- plugins -->
+   
+    <link rel="stylesheet" href="css/plugins/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/plugins/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />   
+
+    <!-- main Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/preloader.css"> -->
+    <link rel="stylesheet" href="css/loader/preloader.css">
+
+    <title>Glowing SignUp</title>
+</head>
+<body>
+
+   <!-- ? Preloader Start -->
+   <div id="preloader-active">
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="preloader-inner position-relative">
+            <div class="preloader-circle"></div>
+            <div class="preloader-img pere-text ">
+              <img src="images/loader.gif" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ? Preloader end -->
+
+<!-- ! ---------------------------------------  sign up page  ----------------------------------------! -->
+<!-- ! ---------------------------------------  sign up page  ----------------------------------------! -->
+<section class="signupSection" id="signupSection" data-vide-bg="images\video\5.mp4" >
+    <div class="container-fluid h-100 ">
+        <div class="row m-auto h-100">
+            <div class="col-lg-6  m-auto MainLogin text-center">
+                
+                <img src="images/logo/glowing-logo.png" class="img-fluid" alt="">
+                
+                <h3 class="text-light mt-2"> sign up to <span class="neon" data-text="Glowing" > Glowing </span>  </h3>
+                
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, reprehenderit? </p>                
+                        <p>back to  <a class="targetLink" href="index.html">home</a>  </p>
+                    
+                <form>
+
+                        <div class="form-row">
+                            <div class="col-lg-6 mt-5">
+                                <input type="text" class="form-control col-lg-12 m-auto" placeholder="first name">
+                            </div>
+                            
+                            <div class="col-lg-6 mt-5">
+                                <input type="text" class="form-control col-lg-12 m-auto" placeholder="last name">
+                            </div>
+                        </div>
+
+                         <div class="form-row">
+                            <div class="col-lg-6 mt-5">
+                                <input type="email" class="form-control col-lg-12 m-auto" placeholder="Email">
+                            </div>
+                            
+                            <div class="col-lg-6 mt-5">
+                                <input type="text" class="form-control col-lg-12 m-auto" placeholder="phone">
+                            </div>
+                        </div>
+
+                         <div class="form-row">
+                            <div class="col-lg-6 mt-5">
+                                <input type="password" class="form-control col-lg-12 m-auto" placeholder="Password">
+                            </div>
+                            
+                            <div class="col-lg-6 mt-5">
+                                <input type="password" class="form-control col-lg-12 m-auto" placeholder=" retype Password">
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-12 mt-3">
+                            <button type="submit" class="butn1"> submit </button>
+                        </div>
+
+                        <p> Back To <a class="targetLink mt-5" href="login.html">login</a></p>
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ! ---------------------------------------  sign up page  ----------------------------------------! -->
+<!-- ! ---------------------------------------  sign up page  ----------------------------------------! -->
+
+
+<!-- bootstrap -->
+<script src="js/bootstrap/jquery-3.5.1.js"></script>
+<script src="js/bootstrap/popper.min.js"></script>
+<script src="js/bootstrap/bootstrap.min.js"></script>
+<!-- fontawsome -->
+<script src="js/fontawsome/fontawesome.min.js"></script>
+<script src="js/fontawsome/solid.min.js"></script>
+<script src="js/fontawsome/brands.min.js"></script>
+<!-- plugins -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="js/plugins/jquery.vide.js"></script>
+<!-- main scripts --> 
+<script src="js/custom.js"></script>
+
+<script>
+/* 1. Proloder */
+$(window).on('load', function () {
+    $('#preloader-active').delay(450).fadeOut('slow');
+    $('body').delay(850).css({
+    'overflow': 'visible'
+    });
+});
